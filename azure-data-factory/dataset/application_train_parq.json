@@ -1,0 +1,19 @@
+{
+	"name": "application_train_parq",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "home-credit"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
